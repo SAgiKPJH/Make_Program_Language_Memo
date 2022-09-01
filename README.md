@@ -161,6 +161,11 @@ DoSomething() <- Do Something
   
   콘솔에 Hello, World! 출력
   ```
+  ```cs
+  콘솔을 사용
+  
+  콘솔에 Hello, World! 출력
+  ```
 - 콘솔을 생략할 수 있다.
   ```cs
   콘솔 생략하여 사용
