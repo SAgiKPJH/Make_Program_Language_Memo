@@ -189,3 +189,36 @@ DoSomething() <- Do Something
   - `기본적 생략 사용 : 콘솔`
   - `기본적 생략 사용 (콘솔)`
 - 사용이라는 동사 이후에는 쓰레기 취급 또는 특수문자가 올 땐 빈 형식에 대입
+
+## Hellow, World!를 나타내는 다양한 방법 모음
+
+- Hello, World! 정석 출력
+  ```cs
+  콘솔을 사용한다.
+  
+  콘솔에 문장 "Hello, World!"를 출력한다.
+  ```
+- Hello, World! 생략 출력
+  ```cs
+  콘솔을 사용한다.
+  콘솔을 사용한다
+  콘솔을 사용.
+  콘솔을 사용
+  콘솔 사용
+  
+  콘솔에 문장 "Hello, World!"를 출력한다.
+  콘솔에 문장"Hello, World!"를 출력한다.
+  콘솔에 "Hello, World!"를 출력한다.
+  콘솔에 "Hello, World!"를 출력한다
+  콘솔에 "Hello, World!"를 출력
+  콘솔에 "Hello, World!" 출력
+  콘솔에 Hello, World! 출력
+  콘솔, Hello, World! 출력
+  ```
+- Hello, World! 확장 출력
+  ```cs
+  콘솔을 사용한다.
+  
+  콘솔에 문장 "Hello, World!"를 출력한다.
+  ```
+  ```
