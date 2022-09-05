@@ -262,3 +262,16 @@ DoSomething() <- Do Something
 ```cs
 
 ```
+
+
+## Math Programming
+
+- Math Programming은 수학적인 계산을 프로그래밍으로 활용하는 언어이다.
+- 각종 수학적 연산을 프로그래밍 할 수 있다.
+- 각종 공식과 더불어 각종 상수를 제안 받을 수 있다.
+
+```cs
+k_1
+integral
+sigma
+```
