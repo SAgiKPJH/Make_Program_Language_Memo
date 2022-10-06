@@ -275,3 +275,92 @@ k_1
 integral
 sigma
 ```
+
+
+
+# 프로그래밍 전용 엑셀 툴
+
+- 프로그래밍을 활용하면서 자료 및 문서를 만든는 툴
+
+
+### 활용 예시
+
+- 다음 문서의 리뷰 뒷부분을 지우고 싶을 때
+  ```
+  ## 목표 (문서를 분석하여 업데이트 하겠습니다.)
+  - [x] [Dockerfile **개발 방법 리뷰**](http://wish.mirero.co.kr/mirero/project/mls/1.0/h18-mirero-mls10-rd/mls-application/-/issues/2133#note_402936)
+    - [x] [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) 리뷰 (http://wish.mirero.co.kr/mirero/education/newface-group/newface/juhyung.park/-/issues/23#note_428472)
+    - [x] [Docker - Dockerfile 작성 / Build (이미지 제작)](https://blog.d0ngd0nge.xyz/docker-dockerfile-write/) 리뷰 (http://wish.mirero.co.kr/mirero/education/newface-group/newface/juhyung.park/-/issues/23#note_428587)
+    - [x] [DockerDocs - docker build](https://docs.docker.com/engine/reference/commandline/build/) 리뷰 (http://wish.mirero.co.kr/mirero/education/newface-group/newface/juhyung.park/-/issues/23#note_428767)
+  - [ ] docker base image를 Dockerfile 활용하여 **개발**
+    - [ ] [Dockerfile Build with Visual Studio Code](http://wish.mirero.co.kr/mirero/project/mls/1.0/h18-mirero-mls10-rd/mls-application/-/issues/2133#note_404113)
+    - [ ] mirero/adc40:cuda11.3.0-cudnn8-devel-ubuntu20.04-2 설치 확인
+  - [ ] docker image를 **docker hub에 업로드**
+  - [ ] dockerfile 개발 - **ADC 프로파일 dockerfile 분석**
+  - [ ] vscode git 사용 시 id/pass 저장 방법 (ubuntu) 분석
+  ```
+- CODE에 다음과 같이 기입한다.
+  - FIND " 리뷰" While( Next != ENTER ) Del
+  - FIND " 리뷰" Del.AT(ENTER)
+    ```bash
+    FIND
+     리뷰
+    Del.AT(ENTER)
+
+    # or
+    \f
+     리뷰
+    \d.at(ENTER)
+    ```
+- 다음과 같이 변환된다.
+  ```
+  ## 목표 (문서를 분석하여 업데이트 하겠습니다.)
+  - [x] [Dockerfile **개발 방법 리뷰**](http://wish.mirero.co.kr/mirero/project/mls/1.0/h18-mirero-mls10-rd/mls-application/-/issues/2133#note_402936)
+    - [x] [Docker in Visual Studio Code](https://code.visualstudio.com/docs/containers/overview) 리뷰
+    - [x] [Docker - Dockerfile 작성 / Build (이미지 제작)](https://blog.d0ngd0nge.xyz/docker-dockerfile-write/) 리뷰
+    - [x] [DockerDocs - docker build](https://docs.docker.com/engine/reference/commandline/build/) 리뷰
+  - [ ] docker base image를 Dockerfile 활용하여 **개발**
+    - [ ] [Dockerfile Build with Visual Studio Code](http://wish.mirero.co.kr/mirero/project/mls/1.0/h18-mirero-mls10-rd/mls-application/-/issues/2133#note_404113)
+    - [ ] mirero/adc40:cuda11.3.0-cudnn8-devel-ubuntu20.04-2 설치 확인
+  - [ ] docker image를 **docker hub에 업로드**
+  - [ ] dockerfile 개발 - **ADC 프로파일 dockerfile 분석**
+  - [ ] vscode git 사용 시 id/pass 저장 방법 (ubuntu) 분석
+  ```
+- 다음과 같은 일을 간단히 구축할 수 있어야 한다.
+  - "mirero"가 기입된 링크 앞뒤 () 및 내용 삭제
+  - \[x] > [ ]
+  ```bash
+  [x]
+  >
+  [ ]
+  ```
+
+### 활용법
+
+- 바꾸기 (예 \[x]를 [ ]로 변환)
+  ```bash
+  [x]
+  />
+  [ ]
+  ```
+- 특정 문자에서 부터 특정 문자까지 지우기
+  ```bash
+  단어
+  /d.at
+  단어2
+  ```
+- 특정 문자 지우기
+  ```bash
+  단어
+  /bl # backspace 를 길이 l 만큼 실행
+  ```
+- 특정 단어 앞앞에 2개 지우기
+  ```bash
+  단어
+  /l2
+  /b2
+  ```
+- 특정키 실행
+  ```bash
+  /'LEFT'/'RIGHT'/'UP'/'DOWN'
+  ```
